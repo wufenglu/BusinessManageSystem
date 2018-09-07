@@ -1,0 +1,7 @@
+﻿/*表单样式*/
+.fromTable,.gridView {border:1px solid #CBE2F4; width:100%;border-spacing:0px; border-collapse:collapse; border-left:0px; line-height:20px;margin-bottom:10px;font-size:12px; border-bottom:0px; border-left:0px;}
+.fromTable{ margin-top:6px; line-height:30px;}
+.fromTable th {border-bottom:1px solid #CBE2F4;border-left:1px solid #CBE2F4;padding-left:10px; text-align:right; background-color:#DCE9FA;}
+.fromTable td {border-bottom:1px solid #CBE2F4;border-left:1px solid #CBE2F4;padding-left:10px; text-align:left;}
+.fromTable th{ width:100px;}
+.fromTable span{ color:Red;}

@@ -1,0 +1,64 @@
+﻿body,input{margin:0px;padding:0px;font-size:12px;}
+a{ text-decoration:none;}
+input {font-size:13px;-webkit-border-radius: 3px;border-radius: 3px; }
+.inputCss{border:1px solid #CBE2F4; line-height:20px; }
+.validateCss {border:1px solid red;background-color:yellow;line-height:20px; }
+.removeFloatDiv { clear:both; }
+
+/*按钮公共样式*/
+.buttonCss{ 
+    background-color:#ace2fa;padding-left:20px; padding-right:20px; height:23px; line-height:23px; border:0px;
+    -webkit-border-radius: 3px;border-radius: 3px;
+    cursor:pointer;border:1px solid #ace2fa;
+}
+.buttonCss:hover {
+    border:1px solid #2791DE;
+}
+
+/*头部导航*/
+.navigation{height:36px;background-image:url(../images/titlebg.jpg);padding-left:6px; line-height:20px; display:none; }
+.navigation a{color:Black;}
+.navigation a:hover{color:Blue;}
+.tabTitle { margin-top:6px; background-color:#F2F2F2; }
+.tabDiv{ display:none; }
+.tabTitle a{
+   display:block;height:32px; line-height:32px; background-color:#999999; padding:0px 13px 0px 13px;
+   text-align:center;color:white;float:left;border-right:1px solid white;
+}
+.tabTitle .tabOn{ background-color:#2791DE; }
+
+/*顶部操作按钮*/
+.topOpration{ padding-left:5px; height:28px; padding-top:5px;}
+
+/*表单样式*/
+.fromTable,.gridView {border:1px solid #CBE2F4; width:100%;border-spacing:0px; border-collapse:collapse; border-left:0px; line-height:20px;margin-bottom:10px;font-size:12px; border-bottom:0px; border-left:0px;}
+.fromTable{ margin-top:6px; line-height:30px;}
+.fromTable th {border-bottom:1px solid #CBE2F4;border-left:1px solid #CBE2F4;padding-left:10px; text-align:right; background-color:#DCE9FA;}
+.fromTable td {border-bottom:1px solid #CBE2F4;border-left:1px solid #CBE2F4;padding-left:10px; text-align:left;}
+.fromTable th{ width:100px;}
+.fromTable span{ color:Red;}
+
+.gridView tr {line-height:25px; }
+.gridView th {border-bottom:1px solid #CBE2F4;border-left:1px solid #CBE2F4;padding-left:10px; text-align:center; background-color:#DCE9FA;}
+.gridView td {border-bottom:1px solid #CBE2F4;border-left:1px solid #CBE2F4;padding-left:10px; text-align:left;}
+.gridView img{ border:0px;}
+.gridView .edit{ cursor:pointer;}
+.gridView .TdSerial{text-align:center;}
+.gridView .TdSingle{text-align:center;}
+.gridView .TdDate {text-align:center;}
+.gridView .TdNumber {text-align:right;}
+.gridView .TdAmount {text-align:right;}
+.gridView .TdTxt {text-align:left;}
+
+.SubmitClass{ text-align:center; position:fixed; bottom:0px; width:100%; height:50px; line-height:50px; }
+.SubmitClass .buttonCss {
+    background-color:#2791DE;
+    color:white;
+    height:33px;
+    height:33px;
+    padding-left:30px;
+    padding-right:30px;
+}
+#cancleCss { background-color:#F2F2F2; color:black; }
+/*底部设置样式*/
+.bottomSet{ text-align:left; padding-left:10px;}

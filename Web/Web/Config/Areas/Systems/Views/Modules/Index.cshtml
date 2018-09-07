@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Modules";
+}
+
+<h1>Pagination 分页表格</h1>
+
+<div class="mini-toolbar" style="border-bottom:0;padding:0px;">
+    <table style="width:100%;">
+        <tr>            
+            <td style="width:100%;">
+                <input id="key" class="mini-textbox" emptyText="请输入姓名" style="width:300px;" onenter="onKeyEnter" />
+                <a class="mini-button" onclick="search()">查询</a>
+            </td>
+            <td style="white-space:nowrap;">
+                <a class="mini-button" iconCls="icon-add" onclick="add()">增加</a>
+                <a class="mini-button" iconCls="icon-remove" onclick="remove()">删除</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="datagrid1" class="mini-datagrid" style="width:100%;height:250px;"
+     url="/Systems/Modules/GetModules" idField="id" allowResize="true"
+     sizeList="[20,30,50,100]" pageSize="20">
+    <div property="columns">
+        <div type="indexcolumn"></div>
+        <div field="Name" width="120" headerAlign="center" allowSort="true">模块名称</div>
+        <div field="Code" width="120" headerAlign="center" allowSort="true">模块编码</div>
+        <div field="IsEnable" width="100" renderer="onGenderRenderer" align="center" headerAlign="center">是否启用</div>
+        <div field="Creater" numberFormat="¥#,0.00" align="right" width="100" allowSort="true">创建人</div>
+        <div field="CreatedOn" width="100" headerAlign="center" dateFormat="yyyy-MM-dd" allowSort="true">创建日期</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+        mini.parse();
+
+        var grid = mini.get("datagrid1");
+
+        grid.load();
+
+
+        function search() {
+            var key = document.getElementById("key").value;
+            grid.load({ key: key});
+        }
+        $("#key").bind("keydown", function (e) {
+            if (e.keyCode == 13) {
+                search();
+            }
+        });
+        ///////////////////////////////////////////////////////
+        var Genders = [{ id: 1, text: '男' }, { id: 2, text: '女'}];
+        function onGenderRenderer(e) {
+            for (var i = 0, l = Genders.length; i < l; i++) {
+                var g = Genders[i];
+                if (g.id == e.value) return g.text;
+            }
+            return "";
+        }
+</script>
+
+<div class="description">
+    <h3>Description</h3>
+
+</div>
+
+

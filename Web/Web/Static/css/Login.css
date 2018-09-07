@@ -1,0 +1,39 @@
+﻿	body
+      {
+        text-align:center; 
+        background-color:#E2EEFC;
+        color:#0744B7;
+        font-weight:bold;
+      }
+      #LoginDiv
+      {
+          background-image:url(../images/UserLogin.jpg); width:492px; height:298px; text-align:left;
+      }
+      .titleDiv
+      {
+          text-align:left;       
+          height:45px;
+          line-height:45px;   
+          padding-left:20px;
+          }
+      #LoginTable
+      {
+          width: 350px; 
+          height:100px;
+          text-align:left; 
+          font-size:13px;
+          margin:30px 60px;
+      }
+      .left
+      {
+      	text-align:right;
+      	}
+      .inputCss
+      { 
+        border:1px solid gray;
+        height:25px;
+        line-height:25px;
+        width:200px;
+        /*background-color:#DBEBFA;*/
+        /*{filter:alpha(opacity=50)};  */     
+      }

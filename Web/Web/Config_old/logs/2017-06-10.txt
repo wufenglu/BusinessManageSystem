@@ -1,0 +1,27 @@
+
+2017/6/10 14:42:30
+e:\颜锟\最新模板全新\Web\NewWeb\Admin\main.aspx.cs(29): error CS0234: 命名空间“YK.Service”中不存在类型或命名空间名称“EmployeeService”(是否缺少程序集引用?)
+2017/6/10 14:45:17
+e:\颜锟\最新模板全新\Web\NewWeb\Admin\main.aspx.cs(29): error CS0234: 命名空间“YK.Service”中不存在类型或命名空间名称“EmployeeService”(是否缺少程序集引用?)
+2017/6/10 14:47:18
+文件“/NewWeb/Admin/SystemModel/Employee/Info/CategoryList.aspx”不存在。
+2017/6/10 15:28:29
+e:\颜锟\最新模板全新\Web\NewWeb\Admin\SystemModel\Examination\PrincipleList.aspx.cs(24): error CS0103: 当前上下文中不存在名称“ButtonDelete”
+2017/6/10 16:01:11
+引发类型为“System.Web.HttpUnhandledException”的异常。
+2017/6/10 16:01:49
+引发类型为“System.Web.HttpUnhandledException”的异常。
+2017/6/10 16:03:36
+e:\颜锟\最新模板全新\Web\NewWeb\Admin\SystemModel\Examination\PrincipleView.aspx.cs(61): error CS0029: 无法将类型“string”隐式转换为“int”
+2017/6/10 16:18:10
+e:\颜锟\最新模板全新\Web\NewWeb\Admin\SystemModel\Examination\PrincipleList.aspx.cs(24): error CS0103: 当前上下文中不存在名称“ButtonDelete”
+2017/6/10 16:33:15
+e:\颜锟\最新模板全新\Web\NewWeb\Admin\SystemModel\Examination\PrincipleView.aspx.cs(62): error CS0029: 无法将类型“int”隐式转换为“string”
+2017/6/10 16:43:26
+e:\颜锟\最新模板全新\Web\NewWeb\Admin\SystemModel\Examination\VisionSubjectView.aspx.cs(83): error CS1502: 与“YK.Interface.Common.IBase<YK.Models.Examination.ExamPrinciple>.Update(YK.Models.Examination.ExamPrinciple)”最匹配的重载方法具有一些无效参数
+2017/6/10 16:55:45
+e:\颜锟\最新模板全新\Web\NewWeb\Admin\SystemModel\Examination\VisionSubjectView.aspx.cs(50): error CS1061: “YK.Models.Examination.ExamVisionSubject”不包含“Order”的定义，并且找不到可接受类型为“YK.Models.Examination.ExamVisionSubject”的第一个参数的扩展方法“Order”(是否缺少 using 指令或程序集引用?)
+2017/6/10 17:09:15
+类型“FredCK.FCKeditorV2.FCKeditor”不具有名为“model”的公共属性。
+2017/6/10 17:10:45
+类型“FredCK.FCKeditorV2.FCKeditor”不具有名为“ToolbarSets”的公共属性。

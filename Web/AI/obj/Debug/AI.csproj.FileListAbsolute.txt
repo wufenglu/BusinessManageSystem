@@ -1,0 +1,10 @@
+H:\yank\企业管理系统V1.0\Web\AI\bin\Debug\AI.exe.config
+H:\yank\企业管理系统V1.0\Web\AI\obj\Debug\AI.csprojResolveAssemblyReference.cache
+H:\yank\企业管理系统V1.0\Web\AI\bin\Debug\AI.exe
+H:\yank\企业管理系统V1.0\Web\AI\bin\Debug\AI.pdb
+H:\yank\企业管理系统V1.0\Web\AI\bin\Debug\AipSdk.dll
+H:\yank\企业管理系统V1.0\Web\AI\bin\Debug\Newtonsoft.Json.dll
+H:\yank\企业管理系统V1.0\Web\AI\bin\Debug\AipSdk.xml
+H:\yank\企业管理系统V1.0\Web\AI\bin\Debug\Newtonsoft.Json.xml
+H:\yank\企业管理系统V1.0\Web\AI\obj\Debug\AI.exe
+H:\yank\企业管理系统V1.0\Web\AI\obj\Debug\AI.pdb

@@ -1,0 +1,15 @@
+
+2017/10/29 21:57:24
+引发类型为“System.Web.HttpUnhandledException”的异常。
+2017/10/29 22:01:12
+文件“/Admin/SystemModel/Organizations/List.aspx”不存在。
+2017/10/29 22:02:45
+引发类型为“System.Web.HttpUnhandledException”的异常。
+2017/10/29 22:20:40
+e:\颜锟\最新模板全新\Web\Web\Config\Admin\SystemModel\System\Organizations\Edit.aspx.cs(43): error CS0103: 当前上下文中不存在名称“TbTitle”
+2017/10/29 22:47:30
+引发类型为“System.Web.HttpUnhandledException”的异常。
+2017/10/29 22:48:11
+引发类型为“System.Web.HttpUnhandledException”的异常。
+2017/10/29 22:49:45
+文件“/Admin/SystemModel/System/Organizations/Detail.aspx”不存在。

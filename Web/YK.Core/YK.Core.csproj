@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79045B32-6AFF-4418-8236-EE89F0430CFD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YK.Core</RootNamespace>
+    <AssemblyName>YK.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\DLL\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\DLL\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net1213">
+      <HintPath>..\DLL\Common.Logging.Log4Net1213.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NewWeb\dll\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>..\NewWeb\dll\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CoreFramework\CoreFramework_Search.cs" />
+    <Compile Include="CoreFramework\CoreFramework_Tool.cs" />
+    <Compile Include="CoreFramework\CoreFramework_Search_SQL.cs" />
+    <Compile Include="CoreFramework\CoreFramework_Search_Lambda.cs" />
+    <Compile Include="CoreFramework\CoreFramework_Search_Find.cs" />
+    <Compile Include="Enums\ConditionEnum.cs" />
+    <Compile Include="Extensions\LinqQueryExtensionByIn.cs" />
+    <Compile Include="Extensions\LinqQueryExtensionByLike.cs" />
+    <Compile Include="Helper\EntityFactory.cs" />
+    <Compile Include="Model\CoreFrameworkEntity.cs" />
+    <Compile Include="Model\DBModel.cs" />
+    <Compile Include="Model\EntityPropColumnAttributes.cs" />
+    <Compile Include="Framework.cs" />
+    <Compile Include="CoreFramework\CoreFramework_Basic.cs" />
+    <Compile Include="Helper\AttributeHelper.cs" />
+    <Compile Include="DynamicBuilder\ConvertHelper.cs" />
+    <Compile Include="DynamicBuilder\DynamicBuilder_DataReader.cs" />
+    <Compile Include="DynamicBuilder\DynamicBuilder_DataTable.cs" />
+    <Compile Include="EntityReflectionDataBase.cs" />
+    <Compile Include="ICoreFramework.cs" />
+    <Compile Include="Model\Event.cs" />
+    <Compile Include="Model\Expression.cs" />
+    <Compile Include="Model\ParamSqlModel.cs" />
+    <Compile Include="Model\Subscriber.cs" />
+    <Compile Include="Pager\PagerBase.cs" />
+    <Compile Include="Pager\IPager.cs" />
+    <Compile Include="Pager\MySqlPager.cs" />
+    <Compile Include="Pager\OraclPager.cs" />
+    <Compile Include="Pager\Pager_DataSet.cs" />
+    <Compile Include="Pager\SqlPager.cs" />
+    <Compile Include="Pager\Pager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceContainer.cs" />
+    <Compile Include="SqlHelper\ConnectionHelper.cs" />
+    <Compile Include="SqlHelper\ISqlHelper.cs" />
+    <Compile Include="SqlHelper\SqlConvertHelper.cs" />
+    <Compile Include="SqlHelper\SqlHelper.cs" />
+    <Compile Include="CoreFramework\CoreFramework_Search_Expression.cs" />
+    <Compile Include="CoreFramework\CoreFramework_Lambda.cs" />
+    <Compile Include="CoreFramework\CoreFramework_Casecade.cs" />
+    <Compile Include="SqlHelper\OracleHelper.cs" />
+    <Compile Include="SqlHelper\TenantSqlHelper.cs" />
+    <Compile Include="Helper\EventHelper.cs" />
+    <Compile Include="TransactionOptions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SqlHelper\MySqlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YK.Cache\YK.Cache.csproj">
+      <Project>{0ba1c14a-b63a-45bd-afe7-ca35d52d801e}</Project>
+      <Name>YK.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YK.Model\YK.Model.csproj">
+      <Project>{e48e8e78-d351-46b5-bc48-c4c82d2cd998}</Project>
+      <Name>YK.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YK.Unity\YK.Unity.csproj">
+      <Project>{665d0f17-1210-4de1-90f4-091aa8e008b1}</Project>
+      <Name>YK.Unity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

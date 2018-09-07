@@ -1,0 +1,13 @@
+
+2017/7/22 14:01:32
+e:\颜锟\最新模板全新\Web\NewWeb\Default.aspx.cs(37): error CS0122: “YK.Core.SqlHelper”不可访问，因为它受保护级别限制
+2017/7/22 14:02:36
+e:\颜锟\最新模板全新\Web\NewWeb\Default.aspx.cs(37): error CS0122: “YK.Core.SqlHelper”不可访问，因为它受保护级别限制
+2017/7/22 14:02:57
+文件“/NewWeb/admin/Default.aspx”不存在。
+2017/7/22 14:05:31
+引发类型为“System.Web.HttpUnhandledException”的异常。
+2017/7/22 14:14:32
+e:\颜锟\最新模板全新\Web\NewWeb\Default.aspx.cs(37): error CS0122: “YK.Core.SqlHelper”不可访问，因为它受保护级别限制
+2017/7/22 22:54:45
+引发类型为“System.Web.HttpUnhandledException”的异常。

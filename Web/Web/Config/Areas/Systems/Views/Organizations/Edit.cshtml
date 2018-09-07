@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Modules";
+}
+
+
+<div id="formDiv">
+</div>
+
+<script type="text/html" id="mini-textbox">
+    <input name="{{data.name}}" class="mini-textbox" emptyText="{{data.emptyText}}" required="{{data.required}}" />
+</script>
+<script type="text/html" id="mini-checkbox">
+    <input name="{{data.name}}" class="mini-checkbox" checked="{{data.checked}}" text="{{data.text}}" />
+</script>
+
+<script type="text/html" id="htmlTemplate">    
+    <table class="{{data.class}}" id="{{data.formId}}">
+        {{each data.list as control}}
+        <tr>
+            <th>{{control.title}}：</th>
+            <td>
+                {{if control.control=="mini-textbox"}}
+                    {{include 'mini-textbox' control}}
+                {{/if}}
+                {{if control.control=="mini-checkbox"}}
+                    {{include 'mini-checkbox' control}}
+                {{/if}}
+            </td>
+        </tr>            
+        {{/each}}
+    </table>
+</script>
+
+<input value="SubmitFrom" type="button" onclick="submitForm()" />
+
+<script type="text/javascript">
+
+    var data = {};
+    data.formId = "form1";
+    data.class = "fromTable";
+    data.list = [];
+    data.list.push({
+        title: "租户名称",
+        control: "mini-textbox",
+        data: {
+            name: "name",
+            emptyText: "租户名称",
+            required: true
+        }        
+    });
+    data.list.push({
+        title: "租户编码",
+        control: "mini-textbox",
+        data: {
+            name: "code",
+            emptyText: "租户编码",
+            required: true
+        }   
+    });
+    data.list.push({
+        title: "租户编码",
+        control: "mini-checkbox",
+        data: {
+            name: "isEnable",
+            text: "是否启用",
+            checked: true
+        }   
+    });
+
+    var html = template("htmlTemplate", { data: data });   
+    document.getElementById("formDiv").innerHTML = html;
+  
+    function submitForm() {
+        //提交表单数据
+        var form = new mini.Form("#form1");
+        form.validate();
+        if (form.isValid() == false)
+        {
+            return;
+        }
+        
+        var data = form.getData();      //获取表单多个控件的数据
+        var json = mini.encode(data);   //序列化成JSON
+        $.ajax({
+            url: "/Systems/Organizations/Save",
+            type: "post",
+            data: { org: data },
+            success: function (text) {
+                alert("提交成功，返回结果:" + text);
+            }
+        });
+    }
+</script>

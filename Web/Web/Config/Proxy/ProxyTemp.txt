@@ -1,0 +1,12 @@
+﻿using System;
+
+namespace YK.Common.Proxy.GenerateClass.#namespace
+{
+    /// <summary>
+    /// 生成代码类
+    /// </summary>
+    public class #class
+    {
+		#content
+    }
+}

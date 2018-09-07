@@ -1,0 +1,9 @@
+2017-05-07 18:25:09,116 [6] INFO  _Default - hello
+ _Defaultname2017-05-07 18:25:27,900 [12] INFO  _Default - hello
+ _Defaultname2017-05-07 18:25:31,958 [12] ERROR YK.Core.SqlHelper - 未将对象引用设置到对象的实例。
+ YK.Core.SqlHelpernameSystem.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 YK.Core.SqlHelper.GetDataSet(CommandType cmdType, String cmdText, List`1 spr) 位置 e:\颜锟\最新模板全新\Web2016-06-01\Web\Web\YK.Core\SqlHelper\SqlHelper.cs:行号 149
+2017-05-07 18:25:45,213 [11] INFO  _Default - hello
+ _Defaultname2017-05-07 18:25:48,491 [11] ERROR YK.Core.SqlHelper - 未将对象引用设置到对象的实例。
+ YK.Core.SqlHelpernameSystem.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 YK.Core.SqlHelper.GetDataSet(CommandType cmdType, String cmdText, List`1 spr) 位置 e:\颜锟\最新模板全新\Web2016-06-01\Web\Web\YK.Core\SqlHelper\SqlHelper.cs:行号 158

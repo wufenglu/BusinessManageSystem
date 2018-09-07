@@ -1,0 +1,11 @@
+﻿.gridView tr {line-height:25px; }
+.gridView th {border-bottom:1px solid #CBE2F4;border-left:1px solid #CBE2F4;padding-left:10px; text-align:center; background-color:#DCE9FA;}
+.gridView td {border-bottom:1px solid #CBE2F4;border-left:1px solid #CBE2F4;padding-left:10px; text-align:left;}
+.gridView img{ border:0px;}
+.gridView .edit{ cursor:pointer;}
+.gridView .TdSerial{text-align:center;}
+.gridView .TdSingle{text-align:center;}
+.gridView .TdDate {text-align:center;}
+.gridView .TdNumber {text-align:right;}
+.gridView .TdAmount {text-align:right;}
+.gridView .TdTxt {text-align:left;}
