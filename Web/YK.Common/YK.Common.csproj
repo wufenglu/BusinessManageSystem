@@ -106,13 +106,9 @@
     <Compile Include="DescriptionAttributeHelper.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\YK.Core\YK.Core.csproj">
+    <ProjectReference Include="..\00.Platform\YK.Core\YK.Core.csproj">
       <Project>{79045B32-6AFF-4418-8236-EE89F0430CFD}</Project>
       <Name>YK.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\YK.Model\YK.Model.csproj">
-      <Project>{e48e8e78-d351-46b5-bc48-c4c82d2cd998}</Project>
-      <Name>YK.Model</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

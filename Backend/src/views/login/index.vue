@@ -8,6 +8,19 @@
         <lang-select class="set-language"/>
       </div>
 
+      <el-form-item prop="tenant">
+        <span class="svg-container svg-container_login">
+          <svg-icon icon-class="user" />
+        </span>
+        <el-input
+          v-model="loginForm.tenant"
+          :placeholder="$t('login.tenant')"
+          name="tenant"
+          type="text"
+          auto-complete="on"
+        />
+      </el-form-item>
+
       <el-form-item prop="username">
         <span class="svg-container svg-container_login">
           <svg-icon icon-class="user" />
@@ -87,6 +100,7 @@ export default {
     }
     return {
       loginForm: {
+        tenant: 'default',
         username: 'admin',
         password: '1111111'
       },

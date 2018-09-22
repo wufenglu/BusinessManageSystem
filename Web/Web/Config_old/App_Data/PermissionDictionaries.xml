@@ -1,8 +1,0 @@
-<?xml version="1.0" standalone="yes"?>
-<Dictionaries>
-  <Dictionarie Name="配置管理" ID="1" IsShow="True">
-    <PathInfo ID="1001" Url="SystemModel/System/Organizations/List.aspx" IsShow="True">租户管理</PathInfo>
-    <PathInfo ID="1004" Url="SystemModel/System/Resources/ResourceList.aspx" IsShow="True">模块管理</PathInfo>
-    <PathInfo ID="1007" Url="SystemModel/System/OrgResources/UserInRole.aspx">租户权限管理</PathInfo>
-  </Dictionarie>  
-</Dictionaries>

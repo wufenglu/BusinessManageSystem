@@ -1,0 +1,15 @@
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\bin\Debug\YK.Component.dll
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\bin\Debug\YK.Component.pdb
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\obj\Debug\YK.Component.csprojResolveAssemblyReference.cache
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\obj\Debug\YK.Component.dll
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\obj\Debug\YK.Component.pdb
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\YK.Component\bin\Debug\YK.Component.dll
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\YK.Component\bin\Debug\YK.Component.pdb
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\YK.Component\obj\Debug\YK.Component.csprojResolveAssemblyReference.cache
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\YK.Component\obj\Debug\YK.Component.dll
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\YK.Component\obj\Debug\YK.Component.pdb
+H:\yank\Git\BusinessManageSystem\Web\99.组件库\YK.Component\bin\YK.Component.xml
+H:\yank\Git\BusinessManageSystem\Web\99.组件库\YK.Component\bin\YK.Component.dll
+H:\yank\Git\BusinessManageSystem\Web\99.组件库\YK.Component\bin\YK.Component.pdb
+H:\yank\Git\BusinessManageSystem\Web\99.组件库\YK.Component\obj\Debug\YK.Component.dll
+H:\yank\Git\BusinessManageSystem\Web\99.组件库\YK.Component\obj\Debug\YK.Component.pdb

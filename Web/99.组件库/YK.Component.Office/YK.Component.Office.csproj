@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBC7F689-B9ED-45D1-A6B0-FCEF2BAB7B6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YK.Component.Office</RootNamespace>
+    <AssemblyName>YK.Component.Office</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\YK.Component.Office.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DocumentationFile>bin\YK.Component.Office.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Excel\Common\ExcelHelper.cs" />
+    <Compile Include="Excel\Common\FileHelper.cs" />
+    <Compile Include="Excel\Common\PictureHelper.cs" />
+    <Compile Include="Excel\Export\Export.cs" />
+    <Compile Include="Excel\Export\Helper\CellRangeAddress.cs" />
+    <Compile Include="Excel\Export\Helper\DeleteRow.cs" />
+    <Compile Include="Excel\Export\Helper\ColumnType.cs" />
+    <Compile Include="Excel\Export\Helper\Locked.cs" />
+    <Compile Include="Excel\Export\Helper\ColumnHidden.cs" />
+    <Compile Include="Excel\Export\Helper\Comment.cs" />
+    <Compile Include="Excel\Export\Helper\Color.cs" />
+    <Compile Include="Excel\Import\ImportByConfig.cs" />
+    <Compile Include="Excel\Import\Import.cs" />
+    <Compile Include="Excel\Model\ColumnErrorMessage.cs" />
+    <Compile Include="Excel\Model\AreaBlock.cs" />
+    <Compile Include="Excel\Model\Column\ColumnFile.cs" />
+    <Compile Include="Excel\Model\Column\ColumnModel.cs" />
+    <Compile Include="Excel\Model\Column\ColumnValidationModel.cs" />
+    <Compile Include="Excel\Model\Const\ExcelValidationMessage.cs" />
+    <Compile Include="Excel\Model\ExcelSheetModel.cs" />
+    <Compile Include="Excel\Model\ExcelRowModel.cs" />
+    <Compile Include="Excel\Model\ExcelGlobalDTO.cs" />
+    <Compile Include="Excel\Model\ExcelVersionEnum.cs" />
+    <Compile Include="Excel\Model\WorkSpace.cs" />
+    <Compile Include="Excel\Test\TestModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YK.Component.Attribute\YK.Component.Attribute.csproj">
+      <Project>{F1BD9626-A202-4E6E-9880-8AA5F4BCC0BD}</Project>
+      <Name>YK.Component.Attribute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YK.Component\YK.Component.csproj">
+      <Project>{5ce6df60-62c8-447e-ae15-b6910c27d0e6}</Project>
+      <Name>YK.Component</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Word\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

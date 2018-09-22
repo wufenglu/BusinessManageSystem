@@ -1,0 +1,10 @@
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\YK.Component.Attribute\bin\Debug\YK.Component.Attribute.dll
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\YK.Component.Attribute\bin\Debug\YK.Component.Attribute.pdb
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\YK.Component.Attribute\obj\Debug\YK.Component.Attribute.csprojResolveAssemblyReference.cache
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\YK.Component.Attribute\obj\Debug\YK.Component.Attribute.dll
+H:\yank\HttpWebRequest\HttpWebRequest\YK.Component\YK.Component.Attribute\obj\Debug\YK.Component.Attribute.pdb
+H:\yank\Git\BusinessManageSystem\Web\99.组件库\YK.Component.Attribute\obj\Debug\YK.Component.Attribute.dll
+H:\yank\Git\BusinessManageSystem\Web\99.组件库\YK.Component.Attribute\obj\Debug\YK.Component.Attribute.pdb
+H:\yank\Git\BusinessManageSystem\Web\99.组件库\YK.Component.Attribute\bin\YK.Component.Attribute.xml
+H:\yank\Git\BusinessManageSystem\Web\99.组件库\YK.Component.Attribute\bin\YK.Component.Attribute.dll
+H:\yank\Git\BusinessManageSystem\Web\99.组件库\YK.Component.Attribute\bin\YK.Component.Attribute.pdb

@@ -50,32 +50,6 @@
     <Compile Include="SysModulesService.cs" />
     <Compile Include="SysUserService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\01.YK.Models\YK.Models.Systems\YK.Models.Systems.csproj">
-      <Project>{3d988af7-2e86-4aa0-9cb4-dfec89548d9c}</Project>
-      <Name>YK.Models.Systems</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\02.YK.Interfaces\YK.Interface.Systems\YK.Interfaces.Systems.csproj">
-      <Project>{edd94978-8a6a-448c-8384-28aefaae1aab}</Project>
-      <Name>YK.Interfaces.Systems</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\YK.Common\YK.Common.csproj">
-      <Project>{b2ac6c0e-1121-4242-a6fe-39606ef7c694}</Project>
-      <Name>YK.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\YK.Core\YK.Core.csproj">
-      <Project>{79045b32-6aff-4418-8236-ee89f0430cfd}</Project>
-      <Name>YK.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\YK.Model\YK.Model.csproj">
-      <Project>{e48e8e78-d351-46b5-bc48-c4c82d2cd998}</Project>
-      <Name>YK.Model</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\YK.Unity\YK.Unity.csproj">
-      <Project>{665D0F17-1210-4DE1-90F4-091AA8E008B1}</Project>
-      <Name>YK.Unity</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

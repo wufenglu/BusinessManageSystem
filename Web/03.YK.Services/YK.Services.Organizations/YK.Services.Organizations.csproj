@@ -45,16 +45,6 @@
     <Compile Include="OrgUserRolesService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\01.YK.Models\YK.Models.Organization\YK.Models.Organizations.csproj">
-      <Project>{bbcb33c3-b583-4c7c-aa7b-d3f3abf9304a}</Project>
-      <Name>YK.Models.Organizations</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\02.YK.Interfaces\YK.Interface.Organization\YK.Interfaces.Organizations.csproj">
-      <Project>{afa0ebee-cc1b-402a-8357-17e9ac5d2385}</Project>
-      <Name>YK.Interfaces.Organizations</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

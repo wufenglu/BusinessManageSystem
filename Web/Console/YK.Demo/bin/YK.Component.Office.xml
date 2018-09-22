@@ -1,0 +1,732 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>YK.Component.Office</name>
+    </assembly>
+    <members>
+        <member name="T:YK.Component.Office.Excel.Common.ExcelHelper">
+            <summary>
+            Excel帮助
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Common.ExcelHelper.GetWorkbook(System.IO.Stream,YK.Component.Office.Excel.Model.ExcelVersionEnum)">
+            <summary>
+            跟进文件流获取工作簿
+            </summary>
+            <param name="stream">文件流</param>
+            <param name="versionEnum">版本</param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Common.ExcelHelper.CreateWorkbook(YK.Component.Office.Excel.Model.ExcelVersionEnum)">
+            <summary>
+            创建工作簿
+            </summary>
+            <param name="versionEnum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Common.ExcelHelper.GetExcelVersion(System.String)">
+            <summary>
+            跟进文件名获取版本
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Common.ExcelHelper.GetCellValue(NPOI.SS.UserModel.ICell)">
+            <summary>
+            获取列的值
+            </summary>
+            <param name="cell"></param>
+            <returns></returns>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Common.FileHelper">
+            <summary>
+            获取文件
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Common.FileHelper.GetFiles(NPOI.SS.UserModel.ISheet)">
+            <summary>
+            获取文件
+            </summary>
+            <param name="sheet"></param>
+            <returns></returns>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Common.PictureHelper">
+            <summary>
+            图片帮助类
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Common.PictureHelper.GetAllPictureInfos(NPOI.SS.UserModel.ISheet,YK.Component.Office.Excel.Model.WorkSpace)">
+            <summary>
+            获取所有图片
+            </summary>
+            <param name="sheet"></param>
+            <param name="workSpace"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Common.PictureHelper.GetAllPictureInfos(NPOI.HSSF.UserModel.HSSFSheet,YK.Component.Office.Excel.Model.WorkSpace)">
+            <summary>
+            获取范围内的所有图片
+            </summary>
+            <param name="sheet"></param>
+            <param name="workSpace"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Common.PictureHelper.GetAllPictureInfos(NPOI.XSSF.UserModel.XSSFSheet,YK.Component.Office.Excel.Model.WorkSpace)">
+            <summary>
+            获取所有的图片信息
+            </summary>
+            <param name="sheet"></param>
+            <param name="workSpace"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Common.PictureHelper.IsInternalOrIntersect(System.Int32,System.Int32,System.Int32,System.Int32,YK.Component.Office.Excel.Model.WorkSpace)">
+            <summary>
+            当前图片的位置
+            </summary>
+            <param name="pictureMinRow"></param>
+            <param name="pictureMaxRow"></param>
+            <param name="pictureMinCol"></param>
+            <param name="pictureMaxCol"></param>
+            <param name="workSpace"></param>
+            <returns></returns>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Export.Export`1">
+            <summary>
+            导出
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.Execute(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            基于导入执行导出
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.ExecuteByEmptyBuffer(System.Byte[],YK.Component.Office.Excel.Model.ExcelVersionEnum,YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            根据模板Excel执行
+            </summary>
+            <param name="buffer"></param>
+            <param name="excelVersionEnum"></param>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.ExecuteByData(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            基于数据执行导出：FilePath、SheetEntityList、StartRowIndex
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.ExecuteByDataInit(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            基于数据导出的初始化
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.ExecuteByDataInitExcel(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            初始化Excel
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.ExportMemoryStream(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            执行导出
+            </summary>
+            <param name="excelGlobalDTO"> Excel全局对象</param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.SetAreaBlock(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            设置区块
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.SetHeadColor(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            设置头部颜色
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.SetComment(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            设置批注
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.SetCellComment(NPOI.SS.UserModel.ICell,System.String,YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            设置批注
+            </summary>
+            <param name="cell"></param>
+            <param name="errorMsg"></param>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.ClearComment(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            清空批注
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.SetSheetLocked(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            设置锁定
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.SetSheetColumnHidden(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            设置隐藏
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.SetSheetColumnType(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            设置列类型
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Export.Export`1.DeleteRow(YK.Component.Office.Excel.Model.ExcelGlobalDTO{`0})">
+            <summary>
+            删除行
+            </summary>
+            <param name="excelGlobalDTO"></param>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Export.Helper.CellRangeAddress">
+            <summary>
+            单元格区间
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Export.Helper.DeleteRow">
+            <summary>
+            删除行
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Export.Helper.ColumnType">
+            <summary>
+            列类型
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Export.Helper.Locked">
+            <summary>
+            锁定
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Export.Helper.ColumnHidden">
+            <summary>
+            列隐藏
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Export.Helper.Comment">
+            <summary>
+            批注
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Export.Helper.Color">
+            <summary>
+            列颜色
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Import.ImportByConfig`1">
+            <summary>
+            导入
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.ImportByConfig`1.#ctor(System.Int32,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="globalStartRowIndex">起始行</param>
+            <param name="globalStartColumnIndex">起始列</param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.ImportByConfig`1.ValidationHead">
+            <summary>
+            校验头部
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.ImportByConfig`1.ValidationValue">
+            <summary>
+            验证内容
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Import.Import`1">
+            <summary>
+            导入
+            </summary>
+        </member>
+        <member name="F:YK.Component.Office.Excel.Import.Import`1.ExcelGlobalDTO">
+            <summary>
+            全局对象
+            </summary>
+        </member>
+        <member name="F:YK.Component.Office.Excel.Import.Import`1.DateImport">
+            <summary>
+            日期导入显示替换
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.#ctor(System.Int32,System.Int32)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="globalStartRowIndex">起始行</param>
+            <param name="globalStartColumnIndex">起始列</param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.Execute(System.String)">
+            <summary>
+            执行导入
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.ExecuteByStream(System.IO.Stream,YK.Component.Office.Excel.Model.ExcelVersionEnum)">
+            <summary>
+            根据流执行
+            </summary>
+            <param name="stream"></param>
+            <param name="excelVersionEnum"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.ExecuteByBuffer(System.Byte[],YK.Component.Office.Excel.Model.ExcelVersionEnum)">
+            <summary>
+            根据流执行
+            </summary>
+            <param name="buffer"></param>
+            <param name="excelVersionEnum"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.GetWorkbook(System.String)">
+            <summary>
+            文件路径
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.GetWorkbook(System.IO.Stream,YK.Component.Office.Excel.Model.ExcelVersionEnum)">
+            <summary>
+            获取工作簿
+            </summary>
+            <param name="stream"></param>
+            <param name="excelVersionEnum"></param>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.GetSheets">
+            <summary>
+            获取Sheet
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.GetSheets(System.IO.Stream,YK.Component.Office.Excel.Model.ExcelVersionEnum)">
+            <summary>
+            获取Sheet
+            </summary>
+            <param name="stream"></param>
+            <param name="excelVersionEnum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.GetEntityAndValidation">
+            <summary>
+            获取实体集合（头部、数据）对象及校验（头部、实体）
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.GetSheetHeadList">
+            <summary>
+            获取Sheet头部信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.GetSheetEntityList">
+            <summary>
+            获取Sheet实体集合
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.ValidationHead">
+            <summary>
+            校验头部
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.ValidationHeaderAfter">
+            <summary>
+            执行
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.ValidationValue">
+            <summary>
+            验证内容
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Import.Import`1.ValidationValueAfter">
+            <summary>
+            验证数据
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.ColumnErrorMessage">
+            <summary>
+            列错误信息
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ColumnErrorMessage.ErrorMessage">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ColumnErrorMessage.ColumnName">
+            <summary>
+            列表头名称
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ColumnErrorMessage.PropertyName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.AreaBlock">
+            <summary>
+            Execl区块
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.AreaBlock.StartRowIndex">
+            <summary>
+            开始行
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.AreaBlock.EndRowIndex">
+            <summary>
+            结束行
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.AreaBlock.StartColumnIndex">
+            <summary>
+            开始列
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.AreaBlock.EndColumnIndex">
+            <summary>
+            结束列
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.AreaBlock.Height">
+            <summary>
+            高度:单行文字的高度为256，三行文字高度为：256*3
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.AreaBlock.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.Column.ColumnFile">
+            <summary>
+            execl每列的附件集合
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnFile.MinRow">
+            <summary>
+            最小开始行
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnFile.MaxRow">
+            <summary>
+            最大开始行
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnFile.MinCol">
+            <summary>
+            最小开始列
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnFile.MaxCol">
+            <summary>
+            最大开始列
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnFile.FileName">
+            <summary>
+            文件全名
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnFile.ExtensionName">
+            <summary>
+            文件扩展名称
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnFile.FileBytes">
+            <summary>
+            附件文件流
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnFile.MimeType">
+            <summary>
+            响应类型
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnFile.FileIndex">
+            <summary>
+            文件顺序
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.Column.ColumnModel">
+            <summary>
+            列实体
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnModel.ColumnIndex">
+            <summary>
+            列序号
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnModel.ColumnName">
+            <summary>
+            列名
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnModel.ColumnValue">
+            <summary>
+            列值
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnModel.ColumnValidations">
+            <summary>
+            列验证集合
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.Column.ColumnValidationModel">
+            <summary>
+            列验证信息
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnValidationModel.ValidationTypeEnum">
+            <summary>
+            验证类型
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.Column.ColumnValidationModel.ErrorMessage">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.Const.ExcelValidationMessage">
+            <summary>
+            Common 多语言
+            </summary>
+        </member>
+        <member name="F:YK.Component.Office.Excel.Model.Const.ExcelValidationMessage.Clgyl_Common_Import_TempletError">
+            <summary>
+            导入失败，Excel文件格式不正确，请重新导出模板！
+            </summary>
+        </member>
+        <member name="F:YK.Component.Office.Excel.Model.Const.ExcelValidationMessage.Clgyl_Common_Import_NotData">
+            <summary>
+            导入的Excel中不存在数据！
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.ExcelSheetModel`1">
+            <summary>
+            Excel实体
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelSheetModel`1.SheetIndex">
+            <summary>
+            Sheet索引序号
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelSheetModel`1.SheetName">
+            <summary>
+            Sheet名称
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelSheetModel`1.IsLocked">
+            <summary>
+            是否锁定
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelSheetModel`1.StartRowIndex">
+            <summary>
+            起始行：从0开始
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelSheetModel`1.StartColumnIndex">
+            <summary>
+            其实列：从0开始
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelSheetModel`1.AreaBlock">
+            <summary>
+            设置区块
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelSheetModel`1.SheetEntityList">
+            <summary>
+            Sheet实体集合
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelSheetModel`1.SheetHeadList">
+            <summary>
+            Sheet头部集合
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelSheetModel`1.ColumnConfig">
+            <summary>
+            行的列配置
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.ExcelRowModel">
+            <summary>
+            基类实体
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Model.ExcelRowModel.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelRowModel.RowNumber">
+            <summary>
+            行号
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelRowModel.ColumnErrorMessage">
+            <summary>
+            列错误信息
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelRowModel.ColumnOptions">
+            <summary>
+            列选项值:键为列名，值为集合（例如：Type，工程合同、采购合同）
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelRowModel.IsDeleteRow">
+            <summary>
+            是否删除行
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelRowModel.OtherColumns">
+            <summary>
+            其他属性
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1">
+            <summary>
+            Excel全局对象
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.FileName">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.FilePath">
+            <summary>
+            文件路径：以文件路径处理时使用
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.FileBytes">
+            <summary>
+            文件字节数组
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.ExcelVersionEnum">
+            <summary>
+            Excel版本
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.Workbook">
+            <summary>
+            工作簿对象
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.GlobalStartRowIndex">
+            <summary>
+            全局起始行：不设置Sheet的默认按照全局来
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.GlobalStartColumnIndex">
+            <summary>
+            全局起始列：不设置Sheet的默认按照全局来
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.Sheets">
+            <summary>
+            Sheet集合
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.ExcelValidationMessage">
+            <summary>
+            Excel验证消息
+            </summary>
+        </member>
+        <member name="M:YK.Component.Office.Excel.Model.ExcelGlobalDTO`1.SetDefaultSheet">
+            <summary>
+            设置默认的Sheet，适用于基于数据的导出
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.ExcelVersionEnum">
+            <summary>
+            Excel版本
+            </summary>
+        </member>
+        <member name="F:YK.Component.Office.Excel.Model.ExcelVersionEnum.No">
+            <summary>
+            无版本（异常）
+            </summary>
+        </member>
+        <member name="F:YK.Component.Office.Excel.Model.ExcelVersionEnum.V2003">
+            <summary>
+            excel2003（正常）
+            </summary>
+        </member>
+        <member name="F:YK.Component.Office.Excel.Model.ExcelVersionEnum.V2007">
+            <summary>
+            excel2007（正常）
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Model.WorkSpace">
+            <summary>
+            工作簿区间
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.WorkSpace.MinRow">
+            <summary>
+            开始行
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.WorkSpace.MaxRow">
+            <summary>
+            结束行
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.WorkSpace.MinCol">
+            <summary>
+            开始列
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.WorkSpace.MaxCol">
+            <summary>
+            结束列
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Model.WorkSpace.OnlyInternal">
+            <summary>
+            是否绝对位置
+            </summary>
+        </member>
+        <member name="T:YK.Component.Office.Excel.Test.TestModel">
+            <summary>
+            测试实体
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Test.TestModel.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Test.TestModel.Code">
+            <summary>
+            编码
+            </summary>
+        </member>
+        <member name="P:YK.Component.Office.Excel.Test.TestModel.Num">
+            <summary>
+            序号
+            </summary>
+        </member>
+    </members>
+</doc>
