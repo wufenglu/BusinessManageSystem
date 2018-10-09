@@ -1,3 +1,24 @@
+IF EXISTS  (SELECT  * FROM dbo.SysObjects WHERE ID = object_id(N'[Sys_User]') AND OBJECTPROPERTY(ID, 'IsTable') = 1) 
+BEGIN
+drop table Sys_User;
+END
+
+CREATE TABLE Sys_User
+(
+ID int identity(1,1) primary key,--编号
+UserName varchar(50),--名称
+UserCode varchar(50),--编码
+Password varchar(50),--编码
+IsEnable bit,--是否启用
+CreaterID INT,--创建人ID
+Creater varchar(50),--创建人
+CreatedOn datetime  default getDate(),--创建日期
+ModifierID INT,--修改人ID
+Modifier varchar(50),--修改人
+ModifyOn datetime  default getDate()--修改日期
+)
+
+
 IF EXISTS  (SELECT  * FROM dbo.SysObjects WHERE ID = object_id(N'[Sys_Modules]') AND OBJECTPROPERTY(ID, 'IsTable') = 1) 
 BEGIN
 drop table Sys_Modules;
