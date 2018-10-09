@@ -18,26 +18,26 @@ namespace YK.Models.Systems
         ///模块ID
         /// </summary>
         [Column(IsPrimaryKey = true, IsDbGenerated = true)]
-        public virtual int ID { get; set; }
+        public int ID { get; set; }
         /// <summary> 
         ///模块ID
         /// </summary>
-        public virtual int ModuleID { get; set; }
+        public int ModuleID { get; set; }
         /// <summary> 
         ///名称
         /// </summary>
-        public virtual string Name { get; set; }
+        public string Name { get; set; }
         /// <summary> 
         ///编码
         /// </summary>
-        public virtual string Code { get; set; }
+        public string Code { get; set; }
         /// <summary> 
         ///路径
         /// </summary>
-        public virtual string Url { get; set; }
+        public string Url { get; set; }
         /// <summary> 
         ///排序
         /// </summary>
-        public virtual int OrderBy { get; set; }
+        public int OrderBy { get; set; }
     }
 }

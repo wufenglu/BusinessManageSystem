@@ -30,3 +30,7 @@ H:\yank\企业管理系统V1.0\Web\YK.Unity\bin\Debug\YK.Model.pdb
 H:\yank\企业管理系统V1.0\Web\YK.Unity\obj\Debug\YK.Unity.csprojResolveAssemblyReference.cache
 H:\yank\企业管理系统V1.0\Web\YK.Unity\obj\Debug\YK.Unity.dll
 H:\yank\企业管理系统V1.0\Web\YK.Unity\obj\Debug\YK.Unity.pdb
+H:\yank\Git\BusinessManageSystem\Web\00.Platform\YK.Unity\obj\Debug\YK.Unity.dll
+H:\yank\Git\BusinessManageSystem\Web\00.Platform\YK.Unity\obj\Debug\YK.Unity.pdb
+H:\yank\Git\BusinessManageSystem\Web\00.Platform\YK.Unity\bin\Debug\YK.Unity.dll
+H:\yank\Git\BusinessManageSystem\Web\00.Platform\YK.Unity\bin\Debug\YK.Unity.pdb

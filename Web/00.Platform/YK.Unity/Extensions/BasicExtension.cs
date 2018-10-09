@@ -6,7 +6,6 @@ using System.Security.Cryptography;
 using System.IO;
 using System.Text.RegularExpressions;
 
-using YK.Model;
 using System.Data;
 using System.Reflection;
 

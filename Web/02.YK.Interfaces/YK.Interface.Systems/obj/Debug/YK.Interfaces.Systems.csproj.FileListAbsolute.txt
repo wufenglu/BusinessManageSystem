@@ -56,3 +56,7 @@ H:\yank\企业管理系统V1.0\Web\02.YK.Interfaces\YK.Interface.Systems\bin\Deb
 H:\yank\企业管理系统V1.0\Web\02.YK.Interfaces\YK.Interface.Systems\obj\Debug\YK.Interfaces.Systems.csprojResolveAssemblyReference.cache
 H:\yank\企业管理系统V1.0\Web\02.YK.Interfaces\YK.Interface.Systems\obj\Debug\YK.Interfaces.Systems.dll
 H:\yank\企业管理系统V1.0\Web\02.YK.Interfaces\YK.Interface.Systems\obj\Debug\YK.Interfaces.Systems.pdb
+H:\yank\Git\BusinessManageSystem\Web\02.YK.Interfaces\YK.Interface.Systems\bin\Debug\YK.Interfaces.Systems.dll
+H:\yank\Git\BusinessManageSystem\Web\02.YK.Interfaces\YK.Interface.Systems\bin\Debug\YK.Interfaces.Systems.pdb
+H:\yank\Git\BusinessManageSystem\Web\02.YK.Interfaces\YK.Interface.Systems\obj\Debug\YK.Interfaces.Systems.dll
+H:\yank\Git\BusinessManageSystem\Web\02.YK.Interfaces\YK.Interface.Systems\obj\Debug\YK.Interfaces.Systems.pdb

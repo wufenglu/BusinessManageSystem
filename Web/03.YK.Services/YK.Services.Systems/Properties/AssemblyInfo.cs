@@ -36,4 +36,4 @@ using YK.Services.Systems;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: YK.Unity.PreApplicationStartMethod(typeof(Main), "Init")]
+[assembly: YK.Core.PreApplicationStartMethod(typeof(Main), "Init")]

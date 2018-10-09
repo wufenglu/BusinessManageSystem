@@ -49,6 +49,12 @@
     <Compile Include="SysModules.cs" />
     <Compile Include="SysUser.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\YK.Model\YK.Model.csproj">
+      <Project>{e48e8e78-d351-46b5-bc48-c4c82d2cd998}</Project>
+      <Name>YK.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

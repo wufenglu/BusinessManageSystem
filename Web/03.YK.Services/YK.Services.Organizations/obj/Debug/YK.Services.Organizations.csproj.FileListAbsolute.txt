@@ -31,3 +31,7 @@ H:\yank\企业管理系统V1.0\Web\03.YK.Services\YK.Services.Organizations\bin\
 H:\yank\企业管理系统V1.0\Web\03.YK.Services\YK.Services.Organizations\obj\Debug\YK.Services.Organizations.csprojResolveAssemblyReference.cache
 H:\yank\企业管理系统V1.0\Web\03.YK.Services\YK.Services.Organizations\obj\Debug\YK.Services.Organizations.dll
 H:\yank\企业管理系统V1.0\Web\03.YK.Services\YK.Services.Organizations\obj\Debug\YK.Services.Organizations.pdb
+H:\yank\Git\BusinessManageSystem\Web\03.YK.Services\YK.Services.Organizations\bin\Debug\YK.Services.Organizations.dll
+H:\yank\Git\BusinessManageSystem\Web\03.YK.Services\YK.Services.Organizations\bin\Debug\YK.Services.Organizations.pdb
+H:\yank\Git\BusinessManageSystem\Web\03.YK.Services\YK.Services.Organizations\obj\Debug\YK.Services.Organizations.dll
+H:\yank\Git\BusinessManageSystem\Web\03.YK.Services\YK.Services.Organizations\obj\Debug\YK.Services.Organizations.pdb

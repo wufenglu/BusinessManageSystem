@@ -130,6 +130,7 @@
     <Compile Include="Pager\Pager_DataSet.cs" />
     <Compile Include="Pager\SqlPager.cs" />
     <Compile Include="Pager\Pager.cs" />
+    <Compile Include="PreApplicationStartMethod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceContainer.cs" />
     <Compile Include="SqlHelper\ConnectionHelper.cs" />
@@ -165,6 +166,10 @@
     <Compile Include="SqlHelper\MySqlHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\YK.Model\YK.Model.csproj">
+      <Project>{e48e8e78-d351-46b5-bc48-c4c82d2cd998}</Project>
+      <Name>YK.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\YK.Cache\YK.Cache.csproj">
       <Project>{0ba1c14a-b63a-45bd-afe7-ca35d52d801e}</Project>
       <Name>YK.Cache</Name>

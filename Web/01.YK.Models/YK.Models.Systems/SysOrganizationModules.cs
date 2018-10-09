@@ -18,14 +18,14 @@ namespace YK.Models.Systems
         ///编号
         /// </summary>
         [Column(IsPrimaryKey = true, IsDbGenerated = true)]
-        public virtual int ID { get; set; }
+        public int ID { get; set; }
         /// <summary> 
         ///父级
         /// </summary>
-        public virtual int ModuleID { get; set; }
+        public int ModuleID { get; set; }
         /// <summary> 
         ///租户ID
         /// </summary>
-        public virtual int OrganizationID { get; set; }
+        public int OrganizationID { get; set; }
     }
 }

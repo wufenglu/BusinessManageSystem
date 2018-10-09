@@ -19,3 +19,10 @@ H:\yank\企业管理系统V1.0\Web\01.YK.Models\YK.Models.Organization\bin\Debug
 H:\yank\企业管理系统V1.0\Web\01.YK.Models\YK.Models.Organization\obj\Debug\YK.Models.Organizations.csprojResolveAssemblyReference.cache
 H:\yank\企业管理系统V1.0\Web\01.YK.Models\YK.Models.Organization\obj\Debug\YK.Models.Organizations.dll
 H:\yank\企业管理系统V1.0\Web\01.YK.Models\YK.Models.Organization\obj\Debug\YK.Models.Organizations.pdb
+H:\yank\Git\BusinessManageSystem\Web\01.YK.Models\YK.Models.Organization\bin\Debug\YK.Models.Organizations.dll
+H:\yank\Git\BusinessManageSystem\Web\01.YK.Models\YK.Models.Organization\bin\Debug\YK.Models.Organizations.pdb
+H:\yank\Git\BusinessManageSystem\Web\01.YK.Models\YK.Models.Organization\bin\Debug\YK.Model.dll
+H:\yank\Git\BusinessManageSystem\Web\01.YK.Models\YK.Models.Organization\bin\Debug\YK.Model.pdb
+H:\yank\Git\BusinessManageSystem\Web\01.YK.Models\YK.Models.Organization\obj\Debug\YK.Models.Organizations.csprojResolveAssemblyReference.cache
+H:\yank\Git\BusinessManageSystem\Web\01.YK.Models\YK.Models.Organization\obj\Debug\YK.Models.Organizations.dll
+H:\yank\Git\BusinessManageSystem\Web\01.YK.Models\YK.Models.Organization\obj\Debug\YK.Models.Organizations.pdb

@@ -10,7 +10,7 @@ namespace YK.Models.Systems
     /// <summary> 
     ///系统级用户
     /// </summary>
-    [Table(Name = "TB_Sys_User")]
+    [Table(Name = "Sys_User")]
     [Description("系统级用户")]
     public class SysUser : CommonProperty
     {
@@ -24,12 +24,16 @@ namespace YK.Models.Systems
         /// </summary>
         public virtual string UserName { get; set; }
         /// <summary> 
+        ///用户名
+        /// </summary>
+        public virtual string UserCode { get; set; }
+        /// <summary> 
         ///密码
         /// </summary>
-        public virtual string UserPwd { get; set; }
+        public virtual string Password { get; set; }
         /// <summary> 
         ///状态
         /// </summary>
-        public virtual int State { get; set; }
+        public virtual bool IsEnable { get; set; }
     }
 }

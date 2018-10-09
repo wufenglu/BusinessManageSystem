@@ -6,7 +6,7 @@ using System.Web;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using YK.Model;
+using YK.Unity.Model;
 
 namespace YK.Unity
 {
@@ -22,7 +22,7 @@ namespace YK.Unity
         public static void TxtWaterMark(string path)
         {
             string fileUrl = HttpContext.Current.Server.MapPath("~/App_Data/WebSet/WebSet.xml");
-            WebSet webset= MyXmlSerializer<YK.Model.WebSet>.Get(fileUrl);
+            WebSet webset= MyXmlSerializer<WebSet>.Get(fileUrl);
 
             Color[] color = { Color.Black, Color.Blue, Color.Green, Color.Orange, Color.Brown, Color.DarkBlue };
             string[] font = { "Times New Roman", "MS Mincho", "Book Antiqua", "Gungsuh", "PMingLiU", "Impact" };
@@ -108,7 +108,7 @@ namespace YK.Unity
         public static void PicWaterMark(string filePath)
         {
             string fileUrl = HttpContext.Current.Server.MapPath("~/App_Data/WebSet/WebSet.xml");
-            YK.Model.WebSet webset = MyXmlSerializer<YK.Model.WebSet>.Get(fileUrl);
+            WebSet webset = MyXmlSerializer<WebSet>.Get(fileUrl);
 
             string waterFile = HttpContext.Current.Server.MapPath("~/" + webset.WaterMarkPicUrl);
 

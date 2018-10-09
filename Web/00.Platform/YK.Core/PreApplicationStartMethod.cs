@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace YK.Unity
+namespace YK.Core
 {
     [AttributeUsage(AttributeTargets.Assembly, AllowMultiple = true)]
     public sealed class PreApplicationStartMethodAttribute : Attribute

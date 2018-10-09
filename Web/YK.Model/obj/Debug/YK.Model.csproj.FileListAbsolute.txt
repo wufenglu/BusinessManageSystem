@@ -214,3 +214,7 @@ H:\yank\企业管理系统V1.0\Web\YK.Model\bin\Debug\YK.Model.pdb
 H:\yank\企业管理系统V1.0\Web\YK.Model\obj\Debug\YK.Model.csprojResolveAssemblyReference.cache
 H:\yank\企业管理系统V1.0\Web\YK.Model\obj\Debug\YK.Model.dll
 H:\yank\企业管理系统V1.0\Web\YK.Model\obj\Debug\YK.Model.pdb
+H:\yank\Git\BusinessManageSystem\Web\YK.Model\bin\Debug\YK.Model.dll
+H:\yank\Git\BusinessManageSystem\Web\YK.Model\bin\Debug\YK.Model.pdb
+H:\yank\Git\BusinessManageSystem\Web\YK.Model\obj\Debug\YK.Model.dll
+H:\yank\Git\BusinessManageSystem\Web\YK.Model\obj\Debug\YK.Model.pdb

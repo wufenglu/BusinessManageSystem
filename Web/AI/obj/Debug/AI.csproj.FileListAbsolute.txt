@@ -11,3 +11,10 @@ H:\yank\企业管理系统V1.0\Web\AI\obj\Debug\AI.pdb
 H:\yank\Git\BusinessManageSystem\Web\AI\bin\Debug\AI.exe.config
 H:\yank\Git\BusinessManageSystem\Web\AI\obj\Debug\AI.exe
 H:\yank\Git\BusinessManageSystem\Web\AI\obj\Debug\AI.pdb
+H:\yank\Git\BusinessManageSystem\Web\AI\bin\Debug\AI.exe
+H:\yank\Git\BusinessManageSystem\Web\AI\bin\Debug\AI.pdb
+H:\yank\Git\BusinessManageSystem\Web\AI\bin\Debug\AipSdk.dll
+H:\yank\Git\BusinessManageSystem\Web\AI\bin\Debug\Newtonsoft.Json.dll
+H:\yank\Git\BusinessManageSystem\Web\AI\bin\Debug\AipSdk.xml
+H:\yank\Git\BusinessManageSystem\Web\AI\bin\Debug\Newtonsoft.Json.xml
+H:\yank\Git\BusinessManageSystem\Web\AI\obj\Debug\AI.csprojResolveAssemblyReference.cache

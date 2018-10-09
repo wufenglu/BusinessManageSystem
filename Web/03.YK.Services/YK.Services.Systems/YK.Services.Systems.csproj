@@ -50,6 +50,24 @@
     <Compile Include="SysModulesService.cs" />
     <Compile Include="SysUserService.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\00.Platform\YK.Core\YK.Core.csproj">
+      <Project>{79045B32-6AFF-4418-8236-EE89F0430CFD}</Project>
+      <Name>YK.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\01.YK.Models\YK.Models.Systems\YK.Models.Systems.csproj">
+      <Project>{3D988AF7-2E86-4AA0-9CB4-DFEC89548D9C}</Project>
+      <Name>YK.Models.Systems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.YK.Interfaces\YK.Interface.Systems\YK.Interfaces.Systems.csproj">
+      <Project>{EDD94978-8A6A-448C-8384-28AEFAAE1AAB}</Project>
+      <Name>YK.Interfaces.Systems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\YK.Model\YK.Model.csproj">
+      <Project>{e48e8e78-d351-46b5-bc48-c4c82d2cd998}</Project>
+      <Name>YK.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

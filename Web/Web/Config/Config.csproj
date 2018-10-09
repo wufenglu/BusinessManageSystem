@@ -308,6 +308,36 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\00.Platform\YK.Cache\YK.Cache.csproj">
+      <Project>{0ba1c14a-b63a-45bd-afe7-ca35d52d801e}</Project>
+      <Name>YK.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\00.Platform\YK.Core\YK.Core.csproj">
+      <Project>{79045B32-6AFF-4418-8236-EE89F0430CFD}</Project>
+      <Name>YK.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\00.Platform\YK.Unity\YK.Unity.csproj">
+      <Project>{665d0f17-1210-4de1-90f4-091aa8e008b1}</Project>
+      <Name>YK.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\01.YK.Models\YK.Models.Systems\YK.Models.Systems.csproj">
+      <Project>{3d988af7-2e86-4aa0-9cb4-dfec89548d9c}</Project>
+      <Name>YK.Models.Systems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02.YK.Interfaces\YK.Interface.Systems\YK.Interfaces.Systems.csproj">
+      <Project>{edd94978-8a6a-448c-8384-28aefaae1aab}</Project>
+      <Name>YK.Interfaces.Systems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.YK.Services\YK.Services.Systems\YK.Services.Systems.csproj">
+      <Project>{df799fc1-fa48-419b-8d43-cd016c4b9df6}</Project>
+      <Name>YK.Services.Systems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\YK.Model\YK.Model.csproj">
+      <Project>{e48e8e78-d351-46b5-bc48-c4c82d2cd998}</Project>
+      <Name>YK.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
