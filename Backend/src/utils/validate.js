@@ -2,6 +2,10 @@
  * Created by jiachenpan on 16/11/18.
  */
 
+export function isvalidTenant(str) {
+  return true
+}
+
 export function isvalidUsername(str) {
   const valid_map = ['admin', 'editor']
   return valid_map.indexOf(str.trim()) >= 0
