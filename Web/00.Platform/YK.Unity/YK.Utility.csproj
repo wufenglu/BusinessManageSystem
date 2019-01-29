@@ -7,8 +7,8 @@
     <ProjectGuid>{665D0F17-1210-4DE1-90F4-091AA8E008B1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>YK.Unity</RootNamespace>
-    <AssemblyName>YK.Unity</AssemblyName>
+    <RootNamespace>YK.Utility</RootNamespace>
+    <AssemblyName>YK.Utility</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
