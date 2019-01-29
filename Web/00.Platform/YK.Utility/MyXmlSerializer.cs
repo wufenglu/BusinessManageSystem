@@ -14,7 +14,7 @@ using System.Text;
 using System.Xml;
 using System.IO;
 
-namespace YK.Unity
+namespace YK.Utility
 {
 
     /// <summary>

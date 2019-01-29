@@ -3,7 +3,7 @@ using System.Collections.Generic;using System.Data.Linq.Mapping;
 using System.Text;
 using System.Xml.Serialization;
 
-namespace YK.Unity.Email
+namespace YK.Utility.Email
 {    
     /// <summary>
     /// 邮箱信息设置

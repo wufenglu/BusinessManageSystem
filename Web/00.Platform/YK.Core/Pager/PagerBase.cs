@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using YK.Core.SqlHelper;
-using YK.Unity.Extensions;
+using YK.Utility.Extensions;
 
 namespace YK.Core.Pager
 {

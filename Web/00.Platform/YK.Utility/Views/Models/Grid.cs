@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace YK.Unity.Views.Models
+namespace YK.Utility.Views.Models
 {
     /// <summary>
     /// gird组件

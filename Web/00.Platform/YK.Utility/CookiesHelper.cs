@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 using System.Web;
 
-namespace YK.Unity
+namespace YK.Utility
 {
     /// <summary>
     /// Cookie处理类

@@ -11,10 +11,10 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using System.Net;
 using System.Net.Mail;
-using YK.Unity.Extensions;
+using YK.Utility.Extensions;
 using Common.Logging;
 
-namespace YK.Unity.Email
+namespace YK.Utility.Email
 {
     /// <summary>
     ///EmailHelper 发送邮件类

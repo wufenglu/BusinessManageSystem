@@ -6,9 +6,9 @@ using System.Web;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using YK.Unity.Model;
+using YK.Utility.Model;
 
-namespace YK.Unity
+namespace YK.Utility
 {
     /// <summary>
     ///WaterMarkHelper 水印帮助类的摘要说明

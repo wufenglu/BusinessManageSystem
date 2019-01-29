@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace YK.Platform.Core
+namespace YK.Core
 {
     /// <summary>
     /// 服务容器
@@ -54,7 +54,7 @@ namespace YK.Platform.Core
         public static AppService InitService<AppService>()
         {
             AppService service = System.Activator.CreateInstance<AppService>();
-            foreach (var prop in service.GetType().GetProperties())
+            foreach (PropertyInfo prop in service.GetType().GetProperties())
             {
                 if (prop.PropertyType.IsInterface)
                 {

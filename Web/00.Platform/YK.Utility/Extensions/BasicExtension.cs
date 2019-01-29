@@ -11,7 +11,7 @@ using System.Reflection;
 
 using Newtonsoft.Json;
 
-namespace YK.Unity.Extensions
+namespace YK.Utility.Extensions
 {
     /// <summary>
     /// 扩展方法

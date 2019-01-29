@@ -12,7 +12,7 @@ using NPOI.HSSF.UserModel;
 using System.Collections;
 using NPOI.XSSF.UserModel;
 
-namespace YK.Unity.Excel
+namespace YK.Utility.Excel
 {
     /// <summary>
     /// Excel导入导出工具,导出的数据必须先准备好对象,导入导出的对象属性须与excel表格的列一一对应

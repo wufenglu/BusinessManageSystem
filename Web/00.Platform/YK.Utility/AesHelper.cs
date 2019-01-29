@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace YK.Unity
+namespace YK.Utility
 {
     /// <summary>
     /// AES加密解密
