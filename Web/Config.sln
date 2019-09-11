@@ -59,7 +59,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Static", "Web\Static\", "{3
 		SlnRelativePath = "Web\Static\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YK.Utility", "00.Platform\YK.Unity\YK.Utility.csproj", "{665D0F17-1210-4DE1-90F4-091AA8E008B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YK.Utility", "00.Platform\YK.Utility\YK.Utility.csproj", "{665D0F17-1210-4DE1-90F4-091AA8E008B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI", "AI\AI.csproj", "{A67A46AE-1DBA-41AF-9872-E36C1572C0AD}"
 EndProject
