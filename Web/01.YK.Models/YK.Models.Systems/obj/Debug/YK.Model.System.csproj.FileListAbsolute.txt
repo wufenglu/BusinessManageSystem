@@ -1,8 +1,0 @@
-E:\颜锟\项目\最新模板全新\Web2015-01-24\Web\YK.Model.System\bin\Debug\YK.Model.System.dll
-E:\颜锟\项目\最新模板全新\Web2015-01-24\Web\YK.Model.System\bin\Debug\YK.Model.System.pdb
-E:\颜锟\项目\最新模板全新\Web2015-01-24\Web\YK.Model.System\obj\Debug\YK.Model.System.dll
-E:\颜锟\项目\最新模板全新\Web2015-01-24\Web\YK.Model.System\obj\Debug\YK.Model.System.pdb
-E:\个人项目\最新模版全新\Web2015-01-24\Web\YK.Model.System\bin\Debug\YK.Model.System.dll
-E:\个人项目\最新模版全新\Web2015-01-24\Web\YK.Model.System\bin\Debug\YK.Model.System.pdb
-E:\个人项目\最新模版全新\Web2015-01-24\Web\YK.Model.System\obj\Debug\YK.Model.System.dll
-E:\个人项目\最新模版全新\Web2015-01-24\Web\YK.Model.System\obj\Debug\YK.Model.System.pdb
