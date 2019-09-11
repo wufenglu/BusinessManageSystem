@@ -61,7 +61,7 @@ namespace YK.Core
                     string interfactFullName = prop.PropertyType.FullName;
                     List<ContainerEntity> list = ContainerList.Where(w => w.InterfaceAssemblyFullName == interfactFullName).ToList();
                     object appService = Assembly.Load(list.First().ServiceAssembly).CreateInstance(list.First().ServiceAssemblyFullName);
-                    prop.SetValue(service, appService);
+                    prop.SetValue(service, appService, null);
                 }
             }
             return service;
